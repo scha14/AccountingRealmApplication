@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Transaction Name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/transaction_name"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Transaction Amount"
+        android:layout_marginTop="10dp"
+        android:id="@+id/transaction_amount"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+
+        />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Deposit"
+        android:textSize="30sp"
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/transaction_type"
+        android:padding="10sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense"
+        android:textSize="30sp"
+
+        />
+
+        </LinearLayout>
+
+    <Button
+            android:id="@+id/add_trasaction"
+            android:text="Add Transaction"
+            android:textAllCaps="false"
+            android:textColor="#252526"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+
+
+</LinearLayout>
